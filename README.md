@@ -26,7 +26,7 @@ Implementasi polymorphism juga dilakukan oleh class Food,Beverage,dan Dessert ya
 yang memiliki metode CalculatePrice() dimana metode ini harus diimplementasikan oleh derived class dari MenuItem yaitu class Food, Desert, dan Beverage.
 Dengan melakukan ini, maka metode CalculatePrice bisa diimplementasikan sesuai dengan keadaan class tersebut. Terlihat untuk Food, implementasi CalculatePrice
 mengaitkan properti Spiciness, untuk Dessert SugarLevel, dan Beverage adalah Size.
-public override int CalculatePrice()
+ public override int CalculatePrice()
     {
        int price = Price + 1000*SugarLevel;
        return price;
@@ -34,7 +34,7 @@ public override int CalculatePrice()
 di atas ini merupakan implementasi dari polymorphism pada metode CalculatePrice() pada class Dessert, penulisan sintaks ditandai dengan public override int CalculatePrice()
 
 Untuk Implementasi Abstraksi terdapat pada Class MenuItem, dimana terdapat metode CalculatePrice. Penulisan sintaks sebagai berikut:
-public abstract class MenuItem {
+ public abstract class MenuItem {
     private string name;
     private string description;
     private int price;
@@ -68,7 +68,7 @@ Dessert, Food, dan Beverage. Dengan penggunaan abstract juga, derived class juga
 Dapat terlihat pada code, class Desert implementasi method CalculatePrice menggunakan properti Spiciness, Beverage dengan propert Size, dan Dessert dengan properti SugarLevel.
 Sehingga dapat terlihat pada class Restaurant dimana terdapat properti Menu:
 
-public class Restaurant {
+ public class Restaurant {
     private string name;
     public Restaurant (string name){
         this.name = name;
