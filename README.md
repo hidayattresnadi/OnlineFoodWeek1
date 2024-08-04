@@ -1,6 +1,6 @@
 Implementasi enkapsulasi dapat terlihat pada properti tiap Model diset menjadi Private sehingga class lain tidak bisa mengakses langsung model tersebut.
 Untuk mengakses properti model tersebut harus menggunakan metode yang sudah tersedia pada class tersebut, dapat dicontohkan pada class Food.
-```csharp
+```
 public class Dessert : MenuItem
 {
     private int SugarLevel;
@@ -22,6 +22,7 @@ public class Dessert : MenuItem
         return price;
     }
 }
+```
 pada class food, untuk mendapatkan nilai sugarLevel, harus melalui metode GetSugarLevel.
 
 Implementasi Inheritance terdapat pada class Food, Beverage, dan Dessert yang berinduk pada class MenuItem.
