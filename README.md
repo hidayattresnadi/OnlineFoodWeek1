@@ -34,11 +34,13 @@ Implementasi polymorphism juga dilakukan oleh class Food,Beverage,dan Dessert ya
 yang memiliki metode CalculatePrice() dimana metode ini harus diimplementasikan oleh derived class dari MenuItem yaitu class Food, Desert, dan Beverage.
 Dengan melakukan ini, maka metode CalculatePrice bisa diimplementasikan sesuai dengan keadaan class tersebut. Terlihat untuk Food, implementasi CalculatePrice
 mengaitkan properti Spiciness, untuk Dessert SugarLevel, dan Beverage adalah Size.
- public override int CalculatePrice()
+```
+public override int CalculatePrice()
     {
        int price = Price + 1000*SugarLevel;
        return price;
     }
+```
 di atas ini merupakan implementasi dari polymorphism pada metode CalculatePrice() pada class Dessert, penulisan sintaks ditandai dengan public override int CalculatePrice()
 
 Untuk Implementasi Abstraksi terdapat pada Class MenuItem, dimana terdapat metode CalculatePrice. Penulisan sintaks sebagai berikut:
@@ -75,7 +77,7 @@ Ini memudahkan dalam pengembangan code dan acuan code untuk nantinya apabila ada
 Dessert, Food, dan Beverage. Dengan penggunaan abstract juga, derived class juga bisa implementasi methodnya dengan sekehendaknya sendiri tanpa terikat dari class manapun.
 Dapat terlihat pada code, class Desert implementasi method CalculatePrice menggunakan properti Spiciness, Beverage dengan propert Size, dan Dessert dengan properti SugarLevel.
 Sehingga dapat terlihat pada class Restaurant dimana terdapat properti Menu:
-
+```
  public class Restaurant {
     private string name;
     public Restaurant (string name){
@@ -88,7 +90,7 @@ Sehingga dapat terlihat pada class Restaurant dimana terdapat properti Menu:
         set { name = value; }
     }
 }
-
+```
 Dimana pada Menu bisa terlihat ia menerima data berupa class MenuItem yang merupakan induk class dari class Food, Beverage, dan Dessert. Tentu ketiga class tersebut
 dapat dimasukkan ke dalam properti Menu ini. Kalau semisal tidak ada MenuItem ini, maka class harus didefine satu-satu dan ini akan merusak salah satu SOLID principle yaitu O.
 apabila terdapat class Food, ktia tambah MenuFood, kalau class Beverage tambah MenuBeverage. Daripada melakukan itu lebih baik membuat class MenuItem abstract sehingga pada class Restaurant
