@@ -93,6 +93,6 @@ Sehingga dapat terlihat pada class Restaurant dimana terdapat properti Menu:
 ```
 Dimana pada Menu bisa terlihat ia menerima data berupa class MenuItem yang merupakan induk class dari class Food, Beverage, dan Dessert. Tentu ketiga class tersebut
 dapat dimasukkan ke dalam properti Menu ini. Kalau semisal tidak ada MenuItem ini, maka class harus didefine satu-satu dan ini akan merusak salah satu SOLID principle yaitu O.
-apabila terdapat class Food, ktia tambah MenuFood, kalau class Beverage tambah MenuBeverage. Daripada melakukan itu lebih baik membuat class MenuItem abstract sehingga pada class Restaurant
+Apabila terdapat class Food, kita tambah MenuFood, kalau class Beverage tambah MenuBeverage. Daripada melakukan itu lebih baik membuat class MenuItem abstract sehingga pada class Restaurant
 tidak akan terubah-ubah lagi codenya.
 
