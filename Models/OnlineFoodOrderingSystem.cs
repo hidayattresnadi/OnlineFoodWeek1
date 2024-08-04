@@ -1,4 +1,7 @@
-public class OnlineFoodOrderingSystem : IOrderingSystem {
+using OnlineFood.Interfaces;
+
+namespace OnlineFood.Models {
+    public class OnlineFoodOrderingSystem : IOrderingSystem {
     private static List<Restaurant> Restaurants = new List<Restaurant>();
     public void AddRestaurant(Restaurant restaurant){
         Restaurant checkAvailableRestaurant=Restaurants.FirstOrDefault(x=>x.Name == restaurant.Name);
@@ -16,6 +19,7 @@ public class OnlineFoodOrderingSystem : IOrderingSystem {
             return Guid.Empty;
         }
         int count = 0;
+        int manyOrderedItems= orderedItems.Count;
         foreach (var item in orderedItems)
         {
             bool isNotAvailable = Restaurants[indexRestaurant].ValidateItems(item);
@@ -24,7 +28,7 @@ public class OnlineFoodOrderingSystem : IOrderingSystem {
             }
             count++;
         }
-        if (count < orderedItems.Count()) {
+        if (count < manyOrderedItems) {
             Console.WriteLine("Food is not exist at this restaurant");
             return Guid.Empty;
         }
@@ -60,17 +64,17 @@ public class OnlineFoodOrderingSystem : IOrderingSystem {
 
     public void CancelOrder(Guid orderId){
         int foundOrder = 0;
-        bool isRemoved =false;
+        bool isCancelled =false;
         foreach (var item in Restaurants)
         {
             foundOrder=item.GetOrder().FindIndex(s =>s.GetOrderId() == orderId);
             if(foundOrder != -1){
                 item.GetOrder()[foundOrder].SetOrderStatus("Cancelled");
-                isRemoved=true;
+                isCancelled=true;
                 break;
             }
         }
-        if (isRemoved){
+        if (isCancelled){
             Console.WriteLine("Order is cancelled");
         }
         else{
@@ -115,5 +119,6 @@ public class OnlineFoodOrderingSystem : IOrderingSystem {
         else{
             Console.WriteLine(foundOrder.GetOrderStatus());
         }
-    }   
+        }   
+    }
 }

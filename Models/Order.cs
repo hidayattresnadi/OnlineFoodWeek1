@@ -1,4 +1,6 @@
-public class Order {
+namespace OnlineFood.Models 
+{
+    public class Order {
     private Guid OrderId;
     private List<MenuItem> MenuItems = new List<MenuItem>();
 
@@ -27,6 +29,7 @@ public class Order {
     }
 
     public void SetOrderStatus(string orderStatus){
-            OrderStatus = orderStatus;
+        OrderStatus = orderStatus;
+    }
     }
 }

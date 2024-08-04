@@ -1,4 +1,6 @@
-public abstract class MenuItem {
+namespace OnlineFood.Models
+{
+    public abstract class MenuItem {
     private string name;
     private string description;
     private int price;
@@ -24,4 +26,5 @@ public abstract class MenuItem {
         set { price = value; }
     }
     public abstract int CalculatePrice();
+    }
 }

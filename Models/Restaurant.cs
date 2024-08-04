@@ -1,11 +1,11 @@
-public class Restaurant {
+namespace OnlineFood.Models {
+    public class Restaurant {
     private string name;
     public Restaurant (string name){
         this.name = name;
     }
     private List<MenuItem> Menu = new List<MenuItem>();
     private List<Order> Orders = new List<Order>();
-
     public string Name {
         get { return name; }
         set { name = value; }
@@ -59,13 +59,13 @@ public class Restaurant {
         Console.WriteLine("Order is added");
     }
     public void CalculateRevenue(){
-        // klo misal order g hilang tar kondisi is not cancelled dan delivered
         int totalPrices = Orders.Where(x=>x.GetOrderStatus()=="Delivered").Sum(x=>x.CalculateTotal());
-        Console.WriteLine("this is revenue from restaurnt: " + name);
+        Console.WriteLine("this is revenue from restaurant: " + name);
         Console.WriteLine(totalPrices);
     }
 
     public List<Order> GetOrder(){
         return Orders;
+    }
     }
 }
