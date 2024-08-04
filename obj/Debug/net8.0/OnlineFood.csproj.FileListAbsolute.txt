@@ -12,3 +12,4 @@ c:\Users\Hidayat tresnadi\OneDrive\Desktop\New folder (3)\OnlineFood\obj\Debug\n
 c:\Users\Hidayat tresnadi\OneDrive\Desktop\New folder (3)\OnlineFood\obj\Debug\net8.0\OnlineFood.pdb
 c:\Users\Hidayat tresnadi\OneDrive\Desktop\New folder (3)\OnlineFood\obj\Debug\net8.0\OnlineFood.genruntimeconfig.cache
 c:\Users\Hidayat tresnadi\OneDrive\Desktop\New folder (3)\OnlineFood\obj\Debug\net8.0\ref\OnlineFood.dll
+c:\Users\Hidayat tresnadi\OneDrive\Desktop\New folder (3)\OnlineFood\obj\Debug\net8.0\OnlineFood.sourcelink.json

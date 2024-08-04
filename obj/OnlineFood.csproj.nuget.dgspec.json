@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj": {}
+    "c:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj": {
+    "c:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj",
+        "projectUniqueName": "c:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj",
         "projectName": "OnlineFood",
-        "projectPath": "C:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj",
+        "projectPath": "c:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\OnlineFood.csproj",
         "packagesPath": "C:\\Users\\Hidayat tresnadi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\obj\\",
+        "outputPath": "c:\\Users\\Hidayat tresnadi\\OneDrive\\Desktop\\New folder (3)\\OnlineFood\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hidayat tresnadi\\AppData\\Roaming\\NuGet\\NuGet.Config",
