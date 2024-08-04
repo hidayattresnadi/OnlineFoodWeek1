@@ -62,7 +62,7 @@ Untuk Implementasi Abstraksi terdapat pada Class MenuItem, dimana terdapat metod
     public abstract int CalculatePrice();
     }
 Dimulai dari penulisan public abstract class MenuItem dan terdapat metode yang nantinya akan diimplementasikan oleh derived classnya yaitu:
-public abstract int CalculatePrice();
+ public abstract int CalculatePrice();
 Ini memudahkan dalam pengembangan code dan acuan code untuk nantinya apabila ada class lain yang akan menjadi derived class dari class MenuItem seperti
 Dessert, Food, dan Beverage. Dengan penggunaan abstract juga, derived class juga bisa implementasi methodnya dengan sekehendaknya sendiri tanpa terikat dari class manapun.
 Dapat terlihat pada code, class Desert implementasi method CalculatePrice menggunakan properti Spiciness, Beverage dengan propert Size, dan Dessert dengan properti SugarLevel.
